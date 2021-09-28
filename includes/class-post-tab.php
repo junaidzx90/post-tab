@@ -70,7 +70,7 @@ class Post_Tab {
 		if ( defined( 'POST_TAB_VERSION' ) ) {
 			$this->version = POST_TAB_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '1.0.1';
 		}
 		$this->plugin_name = 'post-tab';
 
@@ -149,7 +149,7 @@ class Post_Tab {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		
+
 	}
 
 	/**
